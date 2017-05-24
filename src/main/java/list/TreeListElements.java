@@ -11,22 +11,22 @@ public class TreeListElements {
         this.string = string;
     }
 
-    String string;
+    private String string;
 
 
     public TreeListElements getNext() {
-        return next;
+            return next;
     }
 
     public void setNext(TreeListElements next) {
         this.next = next;
+        new GenealogicList(next);
     }
 
-    TreeListElements next;
+    private TreeListElements next;
 
 
     public TreeListElements(String string) {
         this.string = string;
-        this.next = next;
     }
 }
